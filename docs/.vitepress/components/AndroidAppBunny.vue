@@ -9,6 +9,7 @@
       <div style="flex-direction: row;">
         <div>独検（ドイツ語技能検定試験）対策を目的とした、ドイツ語単語の学習アプリです。</div>
         <div>現在はサービス終了しており非公開となっています。</div>
+        <div>使用技術：Kotlin、PHP、Laravel、Realm、Heroku</div>
       </div>
     </div>
     <ImageGallery

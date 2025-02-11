@@ -9,6 +9,7 @@
       <div style="flex-direction: row;">
         <div>HTML5プロフェッショナル認定試験レベル1対策を目的とした、HTML5/CSS3の学習アプリです。</div>
         <div>現在はサービス終了しており非公開となっています。</div>
+        <div>使用技術：Kotlin、Realm</div>
       </div>
     </div>
     <ImageGallery
