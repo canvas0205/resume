@@ -11,9 +11,16 @@
         <div>現在はサービス終了しており非公開となっています。</div>
       </div>
     </div>
-    <ImageGallery
-      :images="preview"
-    />
+    <div className="preview-container">
+      <img
+        v-for="(image, index) in preview"
+        :key="index"
+        :src="image"
+        class="preview"
+        alt="preview"
+        @click="openModal(image)"
+      />
+    </div>
   </div>
 </template>
 
@@ -44,6 +51,20 @@ const preview = [
 
 .thumbnail {
   width: 100px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: auto;  /* 横スクロールを有効にする */
+  padding-bottom: 10px;
+}
+
+.preview {
+  width: 150px;
   height: auto;
   transition: transform 0.2s;
 }

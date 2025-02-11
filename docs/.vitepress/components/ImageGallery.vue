@@ -49,7 +49,7 @@ const closeModal = () => {
 }
 
 .preview-container {
-  display: flex !important;
+  display: flex;
   flex-direction: row;
   gap: 10px;
   overflow-x: auto;  /* 横スクロールを有効にする */
