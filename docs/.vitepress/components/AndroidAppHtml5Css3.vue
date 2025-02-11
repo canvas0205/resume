@@ -26,12 +26,9 @@ const BASE_URL = 'https://canvas0205.github.io/'
 const thumbnail = '/resume/images/html5css3/logo.png'
 const preview = [
   '/resume/images/html5css3/top.png',
-  '/resume/images/html5css3/top.png',
-  '/resume/images/html5css3/top.png',
-  new URL('/resume/images/html5css3/top.png', BASE_URL).href,
-  new URL('/resume/images/html5css3/quiz_list.png', BASE_URL).href,
-  new URL('/resume/images/html5css3/quiz.png', BASE_URL).href,
-  new URL('/resume/images/html5css3/quiz_answer.png', BASE_URL).href,
+  '/resume/images/html5css3/quiz_list.png',
+  '/resume/images/html5css3/quiz.png',
+  '/resume/images/html5css3/quiz_answer.png',
 ];
 
 </script>
