@@ -20,7 +20,7 @@
 <script setup>
 import ImageGallery from './ImageGallery.vue'; // ImageGallery コンポーネントをインポート
 
-const PATH = process.env.GITHUB_PAGES === 'true' ? '/resume' : '';
+//const PATH = process.env.GITHUB_PAGES === 'true' ? '/resume' : '';
 console.log(import.meta.url)
 const thumbnail = new URL('/images/html5css3/logo.png', "https://canvas0205.github.io/resume").href
 const preview = [
