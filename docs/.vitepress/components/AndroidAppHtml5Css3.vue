@@ -20,6 +20,7 @@
 <script setup>
 import ImageGallery from './ImageGallery.vue'; // ImageGallery コンポーネントをインポート
 
+console.log(import.meta.url)
 const thumbnail = new URL('/images/html5css3/logo.png', import.meta.url).href
 const preview = [
   new URL('/images/html5css3/top.png', import.meta.url).href,
