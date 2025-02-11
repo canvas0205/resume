@@ -40,7 +40,7 @@ const closeModal = () => {
 
 </script>
 
-<style scoped>
+<style>
 .gallery {
   display: flex;
   flex-direction: column;
