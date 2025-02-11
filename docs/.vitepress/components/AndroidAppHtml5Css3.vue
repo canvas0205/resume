@@ -22,7 +22,7 @@ import ImageGallery from './ImageGallery.vue';
 
 // FIXME: GithubPagesだと画像が読み込まれないので直接URLを指定している
 const BASE_URL = 'https://canvas0205.github.io/'
-const thumbnail = new URL('../../images/html5css3/logo.png', import.meta.url).href;
+const thumbnail = new URL('/resume/images/html5css3/logo.png', BASE_URL).href;
 const preview = [
   new URL('/resume/images/html5css3/top.png', BASE_URL).href,
   new URL('/resume/images/html5css3/quiz_list.png', BASE_URL).href,

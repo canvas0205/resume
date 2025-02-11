@@ -12,10 +12,6 @@
     </div>
     <div v-if="isModalOpen" class="modal" @click="closeModal">
       <img :src="selectedImage" class="modal-image" alt="Enlarged image" />
-      <div class="modal-controls">
-        <button @click="prevImage" class="modal-button">Previous</button>
-        <button @click="nextImage" class="modal-button">Next</button>
-      </div>
     </div>
   </div>
 </template>
