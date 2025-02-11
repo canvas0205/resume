@@ -89,7 +89,7 @@ layout: doc
 |---|---|
 |Go|4年|
 |Java|4年|
-|PHP|2年|
+|PHP|1年|
 |Scala|1年|
 |TypeScript|1年|
 
@@ -104,7 +104,6 @@ layout: doc
 |Vue.js|1年|
 |Next.js|1年|
 |React|1年|
-|Docker|5年|
 
 </div>
 
