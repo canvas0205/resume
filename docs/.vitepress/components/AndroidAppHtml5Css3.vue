@@ -24,7 +24,7 @@ import ImageGallery from './ImageGallery.vue'; // ImageGallery コンポーネ�
 console.log(import.meta.url)
 const thumbnail = new URL('/resume/images/html5css3/logo.png', "https://canvas0205.github.io").href
 const preview = [
-  new URL('/images/html5css3/top.png', import.meta.url).href,
+  new URL('/resume/images/html5css3/top.png', import.meta.url).href,
   new URL('/images/html5css3/quiz_list.png', import.meta.url).href,
   new URL('/images/html5css3/quiz.png', import.meta.url).href,
   new URL('/images/html5css3/quiz_answer.png', import.meta.url).href,
