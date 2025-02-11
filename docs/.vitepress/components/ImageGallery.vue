@@ -40,7 +40,7 @@ const closeModal = () => {
 
 </script>
 
-<style>
+<style scoped>
 .gallery {
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@ const closeModal = () => {
 }
 
 .preview-container {
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   gap: 10px;
   overflow-x: auto;  /* 横スクロールを有効にする */
