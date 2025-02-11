@@ -1,15 +1,13 @@
 <template>
   <div class="gallery">
-    <div className="preview-container">
-      <img
-        v-for="(image, index) in images"
-        :key="index"
-        :src="image"
-        class="preview"
-        alt="preview"
-        @click="openModal(image)"
-      />
-    </div>
+    <img
+      v-for="(image, index) in images"
+      :key="index"
+      :src="image"
+      class="preview"
+      alt="preview"
+      @click="openModal(image)"
+    />
     <div v-if="isModalOpen" class="modal" @click="closeModal">
       <img :src="selectedImage" class="modal-image" alt="Enlarged image" />
     </div>
@@ -43,17 +41,10 @@ const closeModal = () => {
 <style scoped>
 .gallery {
   display: flex;
-  flex-direction: column;
-  gap: 30px; /* セクション間の間隔 */
-  padding-top: 20px;
-}
-
-.preview-container {
-  display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 10px; /* セクション間の間隔 */
   overflow-x: auto;  /* 横スクロールを有効にする */
-  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 .preview {
