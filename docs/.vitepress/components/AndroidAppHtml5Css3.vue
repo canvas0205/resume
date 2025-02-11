@@ -22,7 +22,7 @@ import ImageGallery from './ImageGallery.vue'; // ImageGallery コンポーネ�
 
 //const PATH = process.env.GITHUB_PAGES === 'true' ? '/resume' : '';
 console.log(import.meta.url)
-const thumbnail = new URL('/images/html5css3/logo.png', "https://canvas0205.github.io/resume").href
+const thumbnail = new URL('/resume/images/html5css3/logo.png', "https://canvas0205.github.io").href
 const preview = [
   new URL('/images/html5css3/top.png', import.meta.url).href,
   new URL('/images/html5css3/quiz_list.png', import.meta.url).href,
