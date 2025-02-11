@@ -4,9 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Resume",
   description: "職務経歴書",
-  base: process.env.GITHUB_PAGES
-    ? '/resume/' // レポジトリ名を設定
-    : '/resume/',
+  base: '/resume/',
   head: [
     // favicons
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: 'favicon/apple-touch-icon.png' }],

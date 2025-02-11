@@ -18,20 +18,17 @@
 </template>
 
 <script setup>
-import ImageGallery from './ImageGallery.vue'; // ImageGallery コンポーネントをインポート
+import ImageGallery from './ImageGallery.vue';
 
-//const PATH = process.env.GITHUB_PAGES === 'true' ? '/resume' : '';
-console.log(import.meta.url)
-const thumbnail = new URL('/resume/images/html5css3/logo.png', "https://canvas0205.github.io").href
+// FIXME: GithubPagesだと画像が読み込まれないので直接URLを指定している
+const BASE_URL = 'https://canvas0205.github.io/'
+const thumbnail = new URL('/resume/images/html5css3/logo.png', BASE_URL).href;
 const preview = [
-  new URL('/resume/images/html5css3/top.png', import.meta.url).href,
-  new URL('/images/html5css3/quiz_list.png', import.meta.url).href,
-  new URL('/images/html5css3/quiz.png', import.meta.url).href,
-  new URL('/images/html5css3/quiz_answer.png', import.meta.url).href,
-  new URL('/images/html5css3/quiz_answer.png', import.meta.url).href,
-  new URL('/images/html5css3/quiz_answer.png', import.meta.url).href,
-  //new URL('/images/og.png', import.meta.url).href,
-]; // 画像URLリスト
+  new URL('/resume/images/html5css3/top.png', BASE_URL).href,
+  new URL('/resume/images/html5css3/quiz_list.png', BASE_URL).href,
+  new URL('/resume/images/html5css3/quiz.png', BASE_URL).href,
+  new URL('/resume/images/html5css3/quiz_answer.png', BASE_URL).href,
+];
 
 </script>
 
