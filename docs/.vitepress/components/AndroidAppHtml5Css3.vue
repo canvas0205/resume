@@ -11,16 +11,9 @@
         <div>現在はサービス終了しており非公開となっています。</div>
       </div>
     </div>
-    <div className="preview-container">
-      <img
-        v-for="(image, index) in preview"
-        :key="index"
-        :src="image"
-        class="preview"
-        alt="preview"
-        @click="openModal(image)"
-      />
-    </div>
+    <ImageGallery
+      :images="preview"
+    />
   </div>
 </template>
 
@@ -29,8 +22,10 @@ import ImageGallery from './ImageGallery.vue';
 
 // FIXME: GithubPagesだと画像が読み込まれないので直接URLを指定している
 const BASE_URL = 'https://canvas0205.github.io/'
-const thumbnail = new URL('/resume/images/html5css3/logo.png', BASE_URL).href;
+//const thumbnail = new URL('/resume/images/html5css3/logo.png', BASE_URL).href;
+const thumbnail = '/resume/images/html5css3/logo.png'
 const preview = [
+  '/images/html5css3/top.png',
   new URL('/resume/images/html5css3/top.png', BASE_URL).href,
   new URL('/resume/images/html5css3/quiz_list.png', BASE_URL).href,
   new URL('/resume/images/html5css3/quiz.png', BASE_URL).href,
@@ -55,46 +50,5 @@ const preview = [
   width: 100px;
   height: auto;
   transition: transform 0.2s;
-}
-
-.gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 30px; /* セクション間の間隔 */
-  padding-top: 20px;
-}
-
-.preview-container {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  overflow-x: auto;  /* 横スクロールを有効にする */
-  padding-bottom: 10px;
-}
-
-.preview {
-  width: 150px;
-  height: auto;
-  transition: transform 0.2s;
-}
-
-/* Modal styles */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.modal-image {
-  max-width: 80%;
-  max-height: 80%;
-  object-fit: contain;
 }
 </style>
