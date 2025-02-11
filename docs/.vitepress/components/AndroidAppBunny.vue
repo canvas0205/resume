@@ -20,15 +20,13 @@
 <script setup>
 import ImageGallery from './ImageGallery.vue';
 
-// FIXME: GithubPagesだと画像が読み込まれないので直接URLを指定している
-const BASE_URL = 'https://canvas0205.github.io/'
-const thumbnail = new URL('/resume/images/bunny/logo.png', BASE_URL).href
+const thumbnail = '/resume/images/bunny/logo.png'
 const preview = [
-  new URL('/resume/images/bunny/top.png', BASE_URL).href,
-  new URL('/resume/images/bunny/quiz_card.png', BASE_URL).href,
-  new URL('/resume/images/bunny/quiz_choice.png', BASE_URL).href,
-  new URL('/resume/images/bunny/ranking.png', BASE_URL).href,
-  new URL('/resume/images/bunny/record.png', BASE_URL).href,
+  '/resume/images/bunny/top.png',
+  '/resume/images/bunny/quiz_card.png',
+  '/resume/images/bunny/quiz_choice.png',
+  '/resume/images/bunny/ranking.png',
+  '/resume/images/bunny/record.png',
 ];
 
 </script>
